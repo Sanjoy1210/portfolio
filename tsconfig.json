@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/subpages/*": ["components/subPages/*"],
+      "@/layout/*": ["components/layout/*"],
+      "@/reusable/*": ["components/reusable/*"]
+    },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,

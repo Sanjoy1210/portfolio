@@ -1,12 +1,42 @@
 /** @type {import('tailwindcss').Config} */
+const { keyframes, screens, colors, bgImages, spacing, typography, form, components, animations } = require('./configs/tailwind');
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
     './app/**/*.{js,ts,jsx,tsx}',
   ],
+  darkMode: 'class',
   theme: {
-    extend: {},
+    screens: {
+      ...screens,
+    },
+    extend: {
+      backgroundImage: {
+        ...bgImages,
+      },
+      fontFamily: {
+        poppins: ['var(--font-poppins)']
+      },
+      colors: {
+        ...colors,
+      },
+      keyframes: {
+        ...keyframes,
+      },
+      animation: {
+        ...animations
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        ...spacing,
+        ...typography,
+        ...form,
+        ...components,
+      })
+    }
+  ],
 }
