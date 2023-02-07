@@ -12,16 +12,16 @@ const ThemeSwitcher = () => {
     <button
       aria-label="Toggle Dark Mode"
       type="button"
-      className="w-8 h-8 p-1 ml-1 mr-1 rounded-full sm:ml-4"
+      className="bg-white w-[40px] hover:text-white h-[40px] rounded-full flex justify-center items-center text-black hover:bg-[#ef4060] transition-all duration-300 ease-in-out cursor-pointer ml-2 linked"
       onClick={() =>
         setTheme(
           theme === 'dark' || resolvedTheme === 'dark' ? 'light' : 'dark'
         )
       }
     >
-      <span className="text-gray-900 dark:text-gray-100">
+      <span className="text-2xl">
         {mounted && (theme === 'dark' || resolvedTheme === 'dark') ? (
-          <RiSunLine />
+          <RiSunLine className={`${mounted ? 'animate-spinRays' : ''}`} />
         ) : (
           <RiMoonLine />
         )}

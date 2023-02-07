@@ -12,8 +12,6 @@ export const useClickAnimation = (
 ) => {
   const { size = 100, color = '#fff', duration = 800 } = config;
 
-  console.log({ element });
-
   useEffect(() => {
     const applyContainerProps = () => {
       if (element.current !== null) {

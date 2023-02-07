@@ -8,7 +8,7 @@ import { TiDocumentText } from 'react-icons/ti';
 export const headerMenuData = [
   {
     id: '1',
-    href: '/home',
+    href: '/',
     text: 'Home',
     icon: AiOutlineHome,
   },

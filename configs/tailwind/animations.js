@@ -7,4 +7,5 @@ module.exports = {
   animateHeart: 'animateHeart 0.3s linear forwards 0.25s',
   animateHeartOut: 'animateHeartOut 0.3s linear forwards',
   ripple: 'ripple 1s linear forwards',
+  spinRays: 'spinRays 3s linear infinite',
 }

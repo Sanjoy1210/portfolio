@@ -98,5 +98,12 @@ module.exports = {
       opacity: 0
     }
   },
-
+  spinRays: {
+    "from": {
+      transform: "translate(0%, 0%) rotate(0deg)"
+    },
+    "to": {
+      transform: "translate(0%, 0%) rotate(90deg)"
+    }
+  }
 };
