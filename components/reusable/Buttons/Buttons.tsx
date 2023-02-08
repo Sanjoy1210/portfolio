@@ -24,8 +24,8 @@ export const PrimaryBtn = ({
   return (
     <button
       className={`${
-        active ? 'bg-gradient-to-r text-white' : 'bg-white text-[#44566c]'
-      } rounded-md cursor-pointer font-medium mx-2.5 flex text-[.8125rem] py-2.5 px-2 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] dark:text-white hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] linked`}
+        active ? 'bg-gradient-to-r text-white' : 'bg-white text-light-gray-1'
+      } rounded-md cursor-pointer font-medium mx-2.5 flex text-[.8125rem] py-2.5 px-2 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-dark dark:text-white hover:text-white hover:bg-gradient-to-r from-light to-light-1 linked`}
       ref={buttonRef}
     >
       <span className="mr-2 text-xl">
@@ -49,8 +49,8 @@ export const LinkBtn = ({
     <Link
       href={href}
       className={`${
-        active ? 'bg-gradient-to-r text-white' : 'bg-white text-[#44566c]'
-      } rounded-md cursor-pointer font-medium mx-2.5 flex text-[.8125rem] py-2.5 px-2 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] dark:text-white hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] linked`}
+        active ? 'bg-gradient-to-r text-white' : 'bg-white text-light-gray-1'
+      } px-2 rounded-md  cursor-pointer font-poppins bg-white text-light-gray-lite font-medium mx-2.5 flex text-[.8125rem] py-2.5 lg:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-dark hover:text-white hover:bg-gradient-to-r from-light to-light-1 dark:text-light-gray `}
       ref={linkButtonRef}
     >
       <span className="mr-2 text-xl">

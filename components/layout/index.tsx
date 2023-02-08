@@ -7,7 +7,7 @@ interface ILayoutProps {
 
 const Layout = ({ children }: ILayoutProps) => {
   return (
-    <main className="flex min-h-screen flex-col bg-light-bg dark:bg-dark-bg">
+    <main className="bg-light-bg min-h-screen dark:bg-dark-bg bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
       <Header />
       {children}
       {/* <Footer /> */}
