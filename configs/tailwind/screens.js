@@ -1,8 +1,8 @@
 module.exports = {
-  // xs: '411px',
-  // sm: '540px',
-  // smd: '640px',
-  // md: '768px',
+  xs: '411px',
+  sm: '540px',
+  smd: '640px',
+  md: '768px',
   lg: '1024px',
   xl: '1280px',
   // '2xl': '1400px',

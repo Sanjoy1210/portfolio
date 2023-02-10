@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .container {
+  max-width: 100%;
+  margin: 0 auto;
+} */
+
 .effect-container {
   position: relative;
   overflow: hidden;
@@ -33,3 +38,21 @@
   @apply animate-ripple;
   border-radius: 50%;
 }
+
+/* @media (min-width: 100%) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+} */

@@ -1,5 +1,5 @@
 import { headerMenuData } from '@/layout/utils/menuData';
-import { LinkBtn } from '@/reusable/Buttons/Buttons';
+import LinkBtn from '@/reusable/LinkBtn';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Dispatch, SetStateAction } from 'react';
 

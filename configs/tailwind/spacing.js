@@ -1,8 +1,8 @@
 module.exports = {
   '.container': {
     // padding: '0px 1rem',
+    maxWidth: '100%',
     margin: '0px auto',
-    width: '100%',
     // '@screen xs': {
     //   maxWidth: 'auto',
     //   margin: '0px auto',
@@ -23,9 +23,11 @@ module.exports = {
     // },
     '@screen lg': {
       maxWidth: '992px',
+      margin: '0px auto',
     },
     '@screen xl': {
       maxWidth: '1280px',
+      margin: '0px auto',
     },
 
     // '@screen 2xl': {

@@ -16,7 +16,8 @@ module.exports = {
         ...bgImages,
       },
       fontFamily: {
-        poppins: ['var(--font-poppins)']
+        poppins: ['var(--font-poppins)'],
+        'roboto-slab': ['var(--font-roboto_slab)']
       },
       colors: {
         ...colors,

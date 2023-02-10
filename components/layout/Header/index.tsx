@@ -1,4 +1,4 @@
-import { LinkBtn } from '@/reusable/Buttons/Buttons';
+import LinkBtn from '@/reusable/LinkBtn';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -14,7 +14,7 @@ const Header = () => {
     <div className="container">
       <header className="flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1500]">
         <div className=" flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent lg:dark:bg-transparent dark:bg-black ">
-          <div className="flex justify-between w-full items-center space-x-4 lg:my-8 my-5 ">
+          <div className="flex justify-between w-full items-center space-x-4 my-5 lg:my-8 ">
             <Link href="/" className="text-5xl font-semibold">
               <Image
                 src="/images/logo.png"
@@ -31,7 +31,7 @@ const Header = () => {
           </div>
         </div>
         <div className="lg:block hidden">
-          <div className="flex">
+          <div className="flex my-12">
             {headerMenuData?.map((item) => (
               <LinkBtn
                 key={item?.id}
