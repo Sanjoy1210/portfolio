@@ -1,6 +1,7 @@
 import { headerMenuData } from '@/layout/utils/menuData';
 import LinkBtn from '@/reusable/LinkBtn';
 import { AnimatePresence, motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 import { Dispatch, SetStateAction } from 'react';
 
 interface IMobileMenu {
@@ -27,6 +28,8 @@ const variants = {
 };
 
 const MobileMenu = ({ active, setActive, isDropdown }: IMobileMenu) => {
+  const router = useRouter();
+
   return (
     <>
       <AnimatePresence>
@@ -45,6 +48,8 @@ const MobileMenu = ({ active, setActive, isDropdown }: IMobileMenu) => {
                 text={menu.text}
                 IconBase={menu.icon}
                 active={active}
+                onClick={() => setActive(false)}
+                isActiveMenu={router?.pathname === menu?.href}
               />
             ))}
           </motion.div>

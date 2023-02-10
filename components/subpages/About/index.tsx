@@ -7,9 +7,9 @@ import WhoAmI from './WhoAmI';
 const About = () => {
   return (
     <section className="container lg:rounded-2xl bg-white dark:bg-dark-1 px-4 sm:px-5 lg:px-20">
-      <div className="w-full">
+      <div className="w-full fade">
         <div className="py-12">
-          <PageHeader text="About me" />
+          <PageHeader text="About me" posLeft="md:after:left-52" />
           <div className="grid grid-cols-12 md:gap-8 lg:gap-10 pt-4 md:pt-10 items-center">
             <div className="col-span-12 md:col-span-4">
               <Image
