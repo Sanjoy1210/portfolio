@@ -23,7 +23,7 @@ export const personalInfo = [
   {
     id: 'email',
     label: 'Email',
-    value: 'sanjoypp@gmail.com',
+    value: 'example@mail.com',
     Icon: FaEnvelopeOpenText,
     color: 'text-[#6ab5b9]',
   },
