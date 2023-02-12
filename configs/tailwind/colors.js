@@ -9,4 +9,8 @@ module.exports = {
   'dark-1': '#111111',
   'light-gray': '#A6A6A6',
   'light-gray-1': '#44566c',
+  'light-slate': '#a8b2d1',
+  'lightest-slate': '#ccd6f6',
+  slate: '#8892b0',
+  'light-navy': '#112240',
 };
